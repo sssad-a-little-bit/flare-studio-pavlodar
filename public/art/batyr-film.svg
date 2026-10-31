@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800" fill="none">
+  <defs>
+    <linearGradient id="background" x1="90" y1="30" x2="900" y2="780" gradientUnits="userSpaceOnUse"><stop stop-color="#e2e5e1"/><stop offset="1" stop-color="#bfc7ca"/></linearGradient>
+    <linearGradient id="body" x1="100" y1="220" x2="880" y2="690" gradientUnits="userSpaceOnUse"><stop stop-color="#455460"/><stop offset=".18" stop-color="#8e9da4"/><stop offset=".4" stop-color="#e1e7e4"/><stop offset=".57" stop-color="#acb8bd"/><stop offset=".8" stop-color="#536373"/><stop offset="1" stop-color="#263443"/></linearGradient>
+    <linearGradient id="hood" x1="220" y1="280" x2="750" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#e6ebe6"/><stop offset=".2" stop-color="#c0cbcc"/><stop offset=".48" stop-color="#9eafb6"/><stop offset=".67" stop-color="#dce5e1"/><stop offset=".84" stop-color="#a6b5bf"/><stop offset="1" stop-color="#637a8a"/></linearGradient>
+    <linearGradient id="glass" x1="330" y1="100" x2="640" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#485866"/><stop offset=".3" stop-color="#253440"/><stop offset="1" stop-color="#0e1926"/></linearGradient>
+    <linearGradient id="bumper" x1="440" y1="585" x2="440" y2="735" gradientUnits="userSpaceOnUse"><stop stop-color="#7b8e9b"/><stop offset=".12" stop-color="#a7b6bc"/><stop offset=".3" stop-color="#4c6070"/><stop offset="1" stop-color="#243544"/></linearGradient>
+    <linearGradient id="film" x1="740" y1="170" x2="580" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".72"/><stop offset=".23" stop-color="#d5eeff" stop-opacity=".12"/><stop offset=".59" stop-color="#b3d2e9" stop-opacity=".28"/><stop offset="1" stop-color="#f8ffff" stop-opacity=".55"/></linearGradient>
+    <linearGradient id="curl" x1="750" y1="120" x2="735" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#f9ffff" stop-opacity=".9"/><stop offset=".22" stop-color="#dcefff" stop-opacity=".1"/><stop offset=".68" stop-color="#d6f0ff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity=".72"/></linearGradient>
+    <linearGradient id="tool" x1="385" y1="465" x2="550" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="#5f82ff"/><stop offset=".4" stop-color="#315bff"/><stop offset="1" stop-color="#1c3aaf"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="17"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1000v800H0z"/>
+  <ellipse cx="505" cy="705" rx="470" ry="52" fill="#2a3b4f" fill-opacity=".22" filter="url(#shadow)"/>
+  <!-- A cropped front quarter: windscreen, bonnet, lamps and bumper establish the car. -->
+  <path d="m267 150 437-1 56 111-546 9 53-119Z" fill="#9aa9af"/>
+  <path d="m292 162 390-1 47 97-484 9 47-105Z" fill="url(#glass)"/>
+  <path d="m329 162-37 97m313-97 58 96" stroke="#7d8f9b" stroke-width="3" opacity=".45"/>
+  <path d="m214 260 546-11 174 204 65 139-38 140c-258 47-558 46-926-2L0 591l64-136 150-195Z" fill="url(#body)"/>
+  <path d="m254 272 461-9 166 291c-226 36-472 38-758 9l131-291Z" fill="url(#hood)"/>
+  <path d="m255 272-132 291m592-300 166 291" stroke="#506777" stroke-width="2"/>
+  <path d="m269 280-110 270m542-277 136 269" stroke="#eef5ee" stroke-opacity=".65" stroke-width="3"/>
+  <path d="M177 549c232 21 436 15 645-9" stroke="#eaf4ee" stroke-opacity=".7" stroke-width="3"/>
+  <path d="M14 589c255 47 644 49 972-4l-25 147c-258 47-558 46-926-2L14 589Z" fill="url(#bumper)"/>
+  <path d="m64 576 261 28 25 43-267-33-19-38Zm612 28 252-34-17 42-262 37 27-45Z" fill="#0d1b2a"/>
+  <path d="m89 587 219 24 9 11-223-24-5-11Zm603 23 211-28-4 12-214 30 7-14Z" fill="#d5e7ff"/>
+  <path d="m99 604 215 24m374-1 204-28" stroke="#7c9ac5" stroke-width="3" opacity=".7"/>
+  <path d="m372 648 259-1-24 70-207-3-28-66Z" fill="#142432"/>
+  <path d="m395 663 211-1m-203 17 195 1m-187 16 178 1" stroke="#3c5264" stroke-width="5"/>
+  <path d="M51 719c296 42 593 40 891-2l-7 27c-283 46-580 47-877-2l-7-23Z" fill="#152632"/>
+  <!-- A clear sheet adheres to the right side of the bonnet; its loose corner is lifted. -->
+  <path d="m510 310 211-37 143 239-224 29-130-231Z" fill="#294f85" fill-opacity=".07"/>
+  <path d="m498 295 207-36 154 246-224 31-137-241Z" fill="url(#film)" stroke="#f5ffff" stroke-opacity=".8" stroke-width="2"/>
+  <path d="M586 314c31-59 46-113 83-150 35-35 89-40 124-5l76 79c-80-37-119-18-145 19-20 29-20 60-16 92l-122-35Z" fill="url(#curl)" stroke="#faffff" stroke-opacity=".85" stroke-width="2"/>
+  <path d="M586 314c51 22 91 32 122 35" stroke="#fff" stroke-width="3" stroke-opacity=".9"/>
+  <path d="M673 176c-29 37-43 76-58 116" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-opacity=".65"/>
+  <path d="m515 309 118 210m105-204 106 177" stroke="#faffff" stroke-opacity=".45"/>
+  <!-- Small cobalt application squeegee with a dark felt edge. -->
+  <g transform="rotate(-13 438 486)">
+    <path d="m350 468 192 11 10 60-201-12-1-59Z" fill="#1a2e44" fill-opacity=".22" filter="url(#soft)"/>
+    <path d="m350 451 188 11 9 56-195-12-2-55Z" fill="url(#tool)"/>
+    <path d="m350 451 188 11-5 10-179-10-4-11Z" fill="#7293ff"/>
+    <path d="m352 506 195 12-3 13-191-13-1-12Z" fill="#182a3a"/>
+    <path d="m365 474 157 9" stroke="#9ab0ff" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+  </g>
+</svg>

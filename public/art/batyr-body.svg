@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000" fill="none">
+  <defs>
+    <linearGradient id="backdrop" x1="80" y1="70" x2="850" y2="950" gradientUnits="userSpaceOnUse"><stop stop-color="#101419"/><stop offset=".55" stop-color="#1d2532"/><stop offset="1" stop-color="#0d121a"/></linearGradient>
+    <radialGradient id="blueAmbient"><stop stop-color="#315bff" stop-opacity=".18"/><stop offset="1" stop-color="#315bff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="sideMetal" x1="230" y1="470" x2="570" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#8d9ba5"/><stop offset=".18" stop-color="#bac5ca"/><stop offset=".24" stop-color="#d5dcd9"/><stop offset=".3" stop-color="#778590"/><stop offset=".65" stop-color="#475560"/><stop offset="1" stop-color="#202c38"/></linearGradient>
+    <linearGradient id="hoodMetal" x1="560" y1="466" x2="758" y2="625" gradientUnits="userSpaceOnUse"><stop stop-color="#87969e"/><stop offset=".25" stop-color="#d4dcda"/><stop offset=".62" stop-color="#eef0e9"/><stop offset=".8" stop-color="#b4c1c7"/><stop offset="1" stop-color="#70818f"/></linearGradient>
+    <linearGradient id="frontMetal" x1="726" y1="595" x2="872" y2="724" gradientUnits="userSpaceOnUse"><stop stop-color="#9daeb7"/><stop offset=".25" stop-color="#526574"/><stop offset=".55" stop-color="#344756"/><stop offset="1" stop-color="#15212e"/></linearGradient>
+    <linearGradient id="roofMetal" x1="260" y1="334" x2="419" y2="398" gradientUnits="userSpaceOnUse"><stop stop-color="#788993"/><stop offset=".5" stop-color="#bec9cd"/><stop offset="1" stop-color="#687c8b"/></linearGradient>
+    <linearGradient id="glazing" x1="272" y1="375" x2="520" y2="529" gradientUnits="userSpaceOnUse"><stop stop-color="#495c69"/><stop offset=".45" stop-color="#223341"/><stop offset="1" stop-color="#12202e"/></linearGradient>
+    <linearGradient id="rim" x1="-90" y1="-100" x2="90" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#c0cbd0"/><stop offset=".4" stop-color="#516371"/><stop offset=".58" stop-color="#a4b4be"/><stop offset="1" stop-color="#30404f"/></linearGradient>
+    <linearGradient id="tire" x1="-100" y1="-110" x2="100" y2="110" gradientUnits="userSpaceOnUse"><stop stop-color="#202a34"/><stop offset=".5" stop-color="#080e15"/><stop offset="1" stop-color="#101922"/></linearGradient>
+    <filter id="floorBlur"><feGaussianBlur stdDeviation="15"/></filter>
+    <filter id="lampGlow"><feGaussianBlur stdDeviation="3"/></filter>
+    <g id="wheel">
+      <circle r="111" fill="url(#tire)"/>
+      <circle r="98" stroke="#3a4753" stroke-width="2"/>
+      <circle r="81" fill="#0d1722" stroke="url(#rim)" stroke-width="8"/>
+      <circle r="68" stroke="#273847" stroke-width="2"/>
+      <g fill="url(#rim)">
+        <path d="m-8-15-8-62 13-5 14 69 49-42 10 13-59 45 73 6-2 17-75-11 32 65-16 7-31-69-34 65-15-9 40-66-72 8-1-17 75-3-58-48 12-12 51 54Z"/>
+      </g>
+      <circle r="19" fill="#6c818e" stroke="#b3c0c6" stroke-width="2"/>
+      <circle r="6" fill="#1c2b39"/>
+    </g>
+  </defs>
+  <path fill="url(#backdrop)" d="M0 0h900v1000H0z"/>
+  <ellipse cx="700" cy="400" rx="460" ry="470" fill="url(#blueAmbient)"/>
+  <path d="m135 0 305 1000M270 0l305 1000" stroke="#adbed6" stroke-opacity=".035" stroke-width="47"/>
+  <path d="M0 883 900 724" stroke="#8ca2c4" stroke-opacity=".08"/>
+  <ellipse cx="480" cy="785" rx="420" ry="34" transform="rotate(13 480 785)" fill="#03070b" filter="url(#floorBlur)"/>
+
+  <!-- Both wheels sit on the visible side, behind their corresponding arches. -->
+  <g transform="translate(151 626) rotate(-8) scale(.53 .78)"><use href="#wheel"/></g>
+  <g transform="translate(610 710) rotate(-8) scale(.7 1)"><use href="#wheel"/></g>
+
+  <!-- Roof, side glazing, and windscreen share one consistent front-three-quarter perspective. -->
+  <path d="m105 501 75-51 40-75 100-45 180 10 140 110 240 70 18 154-166 115-45-10c5-101-24-183-77-185-55-2-86 74-81 167l-305-70c-1-76-22-139-72-145-47-6-74 47-71 117l-20-21-4-89 48-52Z" fill="url(#sideMetal)"/>
+  <path d="m220 375 100-45 180 10-120 40-160-5Z" fill="url(#roofMetal)"/>
+  <path d="m180 450 52-61 141 6 107 107-300-52Z" fill="url(#glazing)" stroke="#81949f" stroke-width="3"/>
+  <path d="m283 391 34 83 15 3-34-85-15-1Z" fill="#899ba5"/>
+  <path d="m380 380 120-40 140 110-140 60-120-130Z" fill="url(#glazing)" stroke="#a5b5bd" stroke-width="4"/>
+  <path d="m404 389 95-32 116 91-113 48-98-107Z" fill="#243746" opacity=".55"/>
+  <path d="m425 381 166 78" stroke="#a8c1d0" stroke-opacity=".2" stroke-width="3"/>
+  <path d="m222 376 99-43 177 10" stroke="#dce2de" stroke-opacity=".6" stroke-width="2"/>
+
+  <!-- The hood terminates at the front face; neither headlight is placed on the side. -->
+  <path d="m500 510 140-60 240 70-160 80-220-90Z" fill="url(#hoodMetal)"/>
+  <path d="m526 513 121-48 197 59-126 61-192-72Z" fill="#d5dfdd" opacity=".35"/>
+  <path d="m552 499 172 75m-34-105 134 57" stroke="#8298a5" stroke-opacity=".65" stroke-width="1.5"/>
+  <path d="m500 510 220 90 160-80" stroke="#e9eee8" stroke-opacity=".8" stroke-width="2"/>
+  <path d="m720 600 160-80 18 154-166 115-12-189Z" fill="url(#frontMetal)"/>
+  <path d="m726 619 53-26 5 27-54 27-4-28Zm111-55 42-21 3 27-42 22-3-28Z" fill="#0a141f" stroke="#91a9bb" stroke-width="1.5"/>
+  <path d="m736 627 37-19m71-35 30-15" stroke="#8facff" stroke-width="9" filter="url(#lampGlow)" opacity=".6"/>
+  <path d="m736 627 37-19m71-35 30-15" stroke="#dbeaff" stroke-width="5"/>
+  <path d="m785 628 46-23 10 49-48 28-8-54Z" fill="#0a1520" stroke="#607988" stroke-width="2"/>
+  <path d="m795 631 5 34m7-40 5 34m7-40 5 34" stroke="#2a4153" stroke-width="5"/>
+  <path d="m743 706 136-72 4 29-138 82-2-39Z" fill="#0a1420"/>
+  <path d="m748 711 125-66" stroke="#4c6577" stroke-width="2"/>
+  <path d="m732 760 162-101 4 15-166 115-4-28Z" fill="#101c2a"/>
+  <path d="m733 759 156-95" stroke="#8498a5" stroke-opacity=".4" stroke-width="2"/>
+
+  <!-- Continuous side panels, wheel arches, and sill. -->
+  <path d="m102 503 406 64 53 27" stroke="#e0e6e0" stroke-width="2" opacity=".65"/>
+  <path d="m193 477 314 69" stroke="#315bff" stroke-opacity=".55" stroke-width="3"/>
+  <path d="m327 494 173 43 44 61-17 144-219-51 19-197Z" stroke="#273b4b" stroke-width="2"/>
+  <path d="m362 535 38 9" stroke="#c4d0d1" stroke-width="4" stroke-linecap="round"/>
+  <path d="m240 660 285 65-1 31-291-69 7-27Z" fill="#233644"/>
+  <path d="m235 680 287 69" stroke="#8499a5" stroke-opacity=".4" stroke-width="2"/>
+  <path d="M80 651c-3-70 24-123 71-117 50 6 71 69 72 145M530 758c-5-95 26-171 81-169 53 2 82 84 77 185" stroke="#b1c0c5" stroke-opacity=".55" stroke-width="3"/>
+  <path d="m471 493 16-12 26 11 7 13-22 10-24-11-3-11Z" fill="#314859" stroke="#9db0bb" stroke-width="2"/>
+  <path d="m95 517 12-8 11 25-12 7-11-24Z" fill="#8e4c48"/>
+</svg>
+
