@@ -76,3 +76,12 @@ npm run dev
 Автоматическая сборка и публикация настроены в .github/workflows/pages.yml. В Settings → Pages нужно выбрать Source: GitHub Actions. После успешного workflow страницы доступны по путям /flare-studio-pavlodar/batyr/ и /flare-studio-pavlodar/picasso/ на домене аккаунта GitHub Pages.
 
 VITE_BASE_PATH задаёт путь репозитория. Сборка создаёт отдельные index.html для обоих маршрутов, поэтому прямые ссылки и обновление страниц не требуют SPA-перенаправления.
+
+## Body Flight — самостоятельное демо
+
+Демо студии воздушной гимнастики, pole dance и стретчинга добавлено по отдельному адресу:
+https://sssad-a-little-bit.github.io/flare-studio-pavlodar/body-flight/
+
+`public/body-flight/` содержит автономный статический экспорт Next.js; существующая сборка Vite копирует его в `dist/body-flight/`. Стили и скрипты Body Flight загружаются только на этой странице. Маршруты Batyr и Picasso не меняются. Noindex сохранён непосредственно в HTML демо; бэкенд не требуется.
+
+Исходный код: https://github.com/sssad-a-little-bit/body-flight-demo, коммит `5528a8cefc42d6d5dd5017cb8c6cba29236c8e64`. Контакты находятся в `src/lib/studio.ts` исходного проекта. Чтобы обновить экспорт, собрать исходный проект с `NEXT_PUBLIC_BASE_PATH=/flare-studio-pavlodar/body-flight`, заменить содержимое `public/body-flight/` результатом из `out/` и выполнить текущую сборку. Редактировать минифицированный экспорт вручную не следует.
